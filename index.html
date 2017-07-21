@@ -33,12 +33,19 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">10</a></li>
-                            <li><a href="#">20</a></li>
+                            <li id = "5">5</a></li>
+                            <li id = "10">10</a></li>
+                            <li id = "20">20</a></li>
                         </ul>
                     </div>
-
+					<div class="form-group">
+                        <label for="startyear">Start Year (Optional)</label>
+                        <input type="text" class="form-control" id="startyear">
+                    </div>
+                    <div class="form-group">
+                        <label for="endyear">End Year (Optional)</label>
+                        <input type="text" class="form-control" id="endyear">
+                    </div>
                     <button class="btn btn-default" id="btnSearch" type="submit">Search</button>
                     <button class="btn btn-default" id="btnClear" type="submit">Clear</button>
                 </form>
@@ -46,9 +53,12 @@
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Search Parameters</h3>
+                <h3 class="panel-title">Top Articles</h3>
             </div>
             <div class="panel-body">
+            	<div id = "articlesHere">
+            	</div>
+            </div>
         </div>
         <script type="text/javascript" src="javascript/javascript.js"></script>
 </body>
